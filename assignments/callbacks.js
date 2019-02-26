@@ -45,7 +45,7 @@ last(items, function(last) {
 })
 
   // sumNums adds two numbers (x, y) and passes the result to the callback.
-function sumNums(x, y, cb) {
+function sumNums(x, y, cb {
   return cb(x+y);
 }
 
@@ -64,10 +64,21 @@ multiplyNums(2, 6, function(multiply) {
 })
 
 
-function contains(item, list, cb) {
   // contains checks if an item is present inside of the given array/list.
   // Pass true to the callback if it is, otherwise pass false.
-}
+function contains(item, list, cb) {
+  for(let i=0; i<list.length; i++) {
+    if (list[i]== item) {
+      cb(true);
+      return true;
+    }
+  }
+  cb(false);
+ }
+ 
+ contains("D", ["A", "B", "C"], function(object){
+   console.log(object);
+ })
 
 /* STRETCH PROBLEM */
 
