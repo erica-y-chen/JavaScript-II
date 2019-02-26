@@ -1,6 +1,32 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
 
+const rain = true; 
+
+function waterPlants() {
+  const water = "I'm thirsty!";
+  const nowater = "I don't need any water";
+  
+  if (rain == false) {
+    console.log(`Plant: ${water}`);
+  }
+  else {
+    console.log(`Plant: ${nowater}`);
+  }
+  
+  function cactus() {
+    if (rain == false) {
+      console.log(`Cactus: I just need a little but of water`)
+    }
+    else {
+      console.log(`Cactus: ${nowater}`);
+    }
+  }
+  cactus()
+}
+waterPlants()
+
+
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
